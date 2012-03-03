@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC6106981501BF3E00067427 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6106971501BF3E00067427 /* UIKit.framework */; };
+		DC61069A1501BF3E00067427 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6106991501BF3E00067427 /* Foundation.framework */; };
+		DC61069C1501BF3E00067427 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC61069B1501BF3E00067427 /* CoreGraphics.framework */; };
+		DC6106A21501BF3E00067427 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC6106A01501BF3E00067427 /* InfoPlist.strings */; };
+		DC6106A41501BF3E00067427 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6106A31501BF3E00067427 /* main.m */; };
+		DC6106A81501BF3E00067427 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6106A71501BF3E00067427 /* AppDelegate.m */; };
+		DC6106AB1501BF3E00067427 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6106AA1501BF3E00067427 /* ViewController.m */; };
+		DC6106AE1501BF3E00067427 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6106AC1501BF3E00067427 /* ViewController.xib */; };
+		DC6106BD1501BF8700067427 /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = DC6106B81501BF8700067427 /* PGMidi.mm */; };
+		DC6106BE1501BF8700067427 /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = DC6106BA1501BF8700067427 /* PGMidiAllSources.mm */; };
+		DC6106BF1501BF8700067427 /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = DC6106BC1501BF8700067427 /* PGMidiFind.mm */; };
+		DC6106C11501BF9D00067427 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6106C01501BF9D00067427 /* CoreMIDI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC6106931501BF3E00067427 /* iOSduino_midi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSduino_midi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6106971501BF3E00067427 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DC6106991501BF3E00067427 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC61069B1501BF3E00067427 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DC61069F1501BF3E00067427 /* iOSduino_midi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSduino_midi-Info.plist"; sourceTree = "<group>"; };
+		DC6106A11501BF3E00067427 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC6106A31501BF3E00067427 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC6106A51501BF3E00067427 /* iOSduino_midi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSduino_midi-Prefix.pch"; sourceTree = "<group>"; };
+		DC6106A61501BF3E00067427 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC6106A71501BF3E00067427 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC6106A91501BF3E00067427 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DC6106AA1501BF3E00067427 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DC6106AD1501BF3E00067427 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		DC6106B51501BF8700067427 /* iOSVersionDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSVersionDetection.h; sourceTree = "<group>"; };
+		DC6106B61501BF8700067427 /* PGArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGArc.h; sourceTree = "<group>"; };
+		DC6106B71501BF8700067427 /* PGMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidi.h; sourceTree = "<group>"; };
+		DC6106B81501BF8700067427 /* PGMidi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidi.mm; sourceTree = "<group>"; };
+		DC6106B91501BF8700067427 /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
+		DC6106BA1501BF8700067427 /* PGMidiAllSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiAllSources.mm; sourceTree = "<group>"; };
+		DC6106BB1501BF8700067427 /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
+		DC6106BC1501BF8700067427 /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
+		DC6106C01501BF9D00067427 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC6106901501BF3E00067427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6106C11501BF9D00067427 /* CoreMIDI.framework in Frameworks */,
+				DC6106981501BF3E00067427 /* UIKit.framework in Frameworks */,
+				DC61069A1501BF3E00067427 /* Foundation.framework in Frameworks */,
+				DC61069C1501BF3E00067427 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC6106881501BF3D00067427 = {
+			isa = PBXGroup;
+			children = (
+				DC6106B41501BF8700067427 /* PGMidi */,
+				DC61069D1501BF3E00067427 /* iOSduino_midi */,
+				DC6106961501BF3E00067427 /* Frameworks */,
+				DC6106941501BF3E00067427 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC6106941501BF3E00067427 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC6106931501BF3E00067427 /* iOSduino_midi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC6106961501BF3E00067427 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC6106C01501BF9D00067427 /* CoreMIDI.framework */,
+				DC6106971501BF3E00067427 /* UIKit.framework */,
+				DC6106991501BF3E00067427 /* Foundation.framework */,
+				DC61069B1501BF3E00067427 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC61069D1501BF3E00067427 /* iOSduino_midi */ = {
+			isa = PBXGroup;
+			children = (
+				DC6106A61501BF3E00067427 /* AppDelegate.h */,
+				DC6106A71501BF3E00067427 /* AppDelegate.m */,
+				DC6106A91501BF3E00067427 /* ViewController.h */,
+				DC6106AA1501BF3E00067427 /* ViewController.m */,
+				DC6106AC1501BF3E00067427 /* ViewController.xib */,
+				DC61069E1501BF3E00067427 /* Supporting Files */,
+			);
+			path = iOSduino_midi;
+			sourceTree = "<group>";
+		};
+		DC61069E1501BF3E00067427 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC61069F1501BF3E00067427 /* iOSduino_midi-Info.plist */,
+				DC6106A01501BF3E00067427 /* InfoPlist.strings */,
+				DC6106A31501BF3E00067427 /* main.m */,
+				DC6106A51501BF3E00067427 /* iOSduino_midi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC6106B41501BF8700067427 /* PGMidi */ = {
+			isa = PBXGroup;
+			children = (
+				DC6106B51501BF8700067427 /* iOSVersionDetection.h */,
+				DC6106B61501BF8700067427 /* PGArc.h */,
+				DC6106B71501BF8700067427 /* PGMidi.h */,
+				DC6106B81501BF8700067427 /* PGMidi.mm */,
+				DC6106B91501BF8700067427 /* PGMidiAllSources.h */,
+				DC6106BA1501BF8700067427 /* PGMidiAllSources.mm */,
+				DC6106BB1501BF8700067427 /* PGMidiFind.h */,
+				DC6106BC1501BF8700067427 /* PGMidiFind.mm */,
+			);
+			name = PGMidi;
+			path = iOSduino_midi/PGMidi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC6106921501BF3E00067427 /* iOSduino_midi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC6106B11501BF3E00067427 /* Build configuration list for PBXNativeTarget "iOSduino_midi" */;
+			buildPhases = (
+				DC61068F1501BF3E00067427 /* Sources */,
+				DC6106901501BF3E00067427 /* Frameworks */,
+				DC6106911501BF3E00067427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSduino_midi;
+			productName = iOSduino_midi;
+			productReference = DC6106931501BF3E00067427 /* iOSduino_midi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC61068A1501BF3D00067427 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Random Accident";
+			};
+			buildConfigurationList = DC61068D1501BF3D00067427 /* Build configuration list for PBXProject "iOSduino_midi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC6106881501BF3D00067427;
+			productRefGroup = DC6106941501BF3E00067427 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC6106921501BF3E00067427 /* iOSduino_midi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC6106911501BF3E00067427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6106A21501BF3E00067427 /* InfoPlist.strings in Resources */,
+				DC6106AE1501BF3E00067427 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC61068F1501BF3E00067427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6106A41501BF3E00067427 /* main.m in Sources */,
+				DC6106A81501BF3E00067427 /* AppDelegate.m in Sources */,
+				DC6106AB1501BF3E00067427 /* ViewController.m in Sources */,
+				DC6106BD1501BF8700067427 /* PGMidi.mm in Sources */,
+				DC6106BE1501BF8700067427 /* PGMidiAllSources.mm in Sources */,
+				DC6106BF1501BF8700067427 /* PGMidiFind.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC6106A01501BF3E00067427 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC6106A11501BF3E00067427 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DC6106AC1501BF3E00067427 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC6106AD1501BF3E00067427 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC6106AF1501BF3E00067427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DC6106B01501BF3E00067427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC6106B21501BF3E00067427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSduino_midi/iOSduino_midi-Prefix.pch";
+				INFOPLIST_FILE = "iOSduino_midi/iOSduino_midi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DC6106B31501BF3E00067427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSduino_midi/iOSduino_midi-Prefix.pch";
+				INFOPLIST_FILE = "iOSduino_midi/iOSduino_midi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC61068D1501BF3D00067427 /* Build configuration list for PBXProject "iOSduino_midi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6106AF1501BF3E00067427 /* Debug */,
+				DC6106B01501BF3E00067427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC6106B11501BF3E00067427 /* Build configuration list for PBXNativeTarget "iOSduino_midi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6106B21501BF3E00067427 /* Debug */,
+				DC6106B31501BF3E00067427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC61068A1501BF3D00067427 /* Project object */;
+}
