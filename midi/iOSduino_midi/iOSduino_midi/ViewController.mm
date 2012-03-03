@@ -22,6 +22,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Load up the PGMidi component
+    midi = [[PGMidi alloc] init];
+    [midi enableNetwork:YES];
+    [midi retain];
+    
+    currentBank = 0;
+}
+
+- (void)dealloc
+{
+    [midi release];
+    [super dealloc];
 }
 
 - (void)viewDidUnload
@@ -60,5 +73,32 @@
     else
         return NO;
 }
+
+
+- (IBAction)noteDown:(id)sender
+{
+    // calculate note from TAG and Current Bank
+    UIButton *btn = (UIButton *)sender;
+    UInt8 note = (btn.tag - 1) + (currentBank * 12);
+    const UInt8 noteOn[] = { 0x90, note, 127 };
+    [midi sendBytes:noteOn size:sizeof(noteOn)];
+}
+
+- (IBAction)noteUp:(id)sender
+{
+    // calculate note from TAG and Current Bank
+    UIButton *btn = (UIButton *)sender;
+    UInt8 note = (btn.tag - 1) + (currentBank * 12);
+    const UInt8 noteOff[] = { 0x80, note, 0 };
+    [midi sendBytes:noteOff size:sizeof(noteOff)];    
+}
+
+- (IBAction)bankSelect:(id)sender
+{
+    UISegmentedControl *seg = (UISegmentedControl *)sender;
+    currentBank = seg.selectedSegmentIndex;
+}
+
+
 
 @end
