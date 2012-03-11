@@ -10,6 +10,8 @@
 
 @implementation ViewController
 
+@synthesize notesOn;
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -27,8 +29,6 @@
     midi = [[PGMidi alloc] init];
     [midi enableNetwork:YES];
     [midi retain];
-    
-    currentBank = 0;
 }
 
 - (void)dealloc
@@ -74,31 +74,22 @@
         return NO;
 }
 
-
-- (IBAction)noteDown:(id)sender
+- (IBAction)playSound:(id)sender
 {
-    // calculate note from TAG and Current Bank
-    UIButton *btn = (UIButton *)sender;
-    UInt8 note = (btn.tag - 1) + (currentBank * 12);
-    const UInt8 noteOn[] = { 0x90, note, 127 };
-    [midi sendBytes:noteOn size:sizeof(noteOn)];
+    const UInt8 noteOn[] = { 0x90, 0, 127 };
+    [midi sendBytes:noteOn size:sizeof(noteOn)];  
 }
 
-- (IBAction)noteUp:(id)sender
+- (IBAction)armUp:(id)sender
 {
-    // calculate note from TAG and Current Bank
-    UIButton *btn = (UIButton *)sender;
-    UInt8 note = (btn.tag - 1) + (currentBank * 12);
-    const UInt8 noteOff[] = { 0x80, note, 0 };
-    [midi sendBytes:noteOff size:sizeof(noteOff)];    
+    const UInt8 noteOn[] = { 0x90, 1, 127 };
+    [midi sendBytes:noteOn size:sizeof(noteOn)];      
 }
 
-- (IBAction)bankSelect:(id)sender
+- (IBAction)armDown:(id)sender
 {
-    UISegmentedControl *seg = (UISegmentedControl *)sender;
-    currentBank = seg.selectedSegmentIndex;
+    const UInt8 noteOn[] = { 0x90, 2, 127 };
+    [midi sendBytes:noteOn size:sizeof(noteOn)];  
 }
-
-
 
 @end

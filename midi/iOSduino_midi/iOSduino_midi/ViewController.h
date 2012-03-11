@@ -12,11 +12,12 @@
 @interface ViewController : UIViewController
 {
     PGMidi *midi;
-    int currentBank;
 }
 
-- (IBAction)noteDown:(id)sender;
-- (IBAction)noteUp:(id)sender;
-- (IBAction)bankSelect:(id)sender;
+@property (nonatomic,retain) IBOutlet UISwitch *notesOn;
+
+- (IBAction)playSound:(id)sender;
+- (IBAction)armUp:(id)sender;
+- (IBAction)armDown:(id)sender;
 
 @end
