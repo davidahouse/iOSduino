@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCAEECF015116B0F00FCEFDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAEECEF15116B0F00FCEFDD /* UIKit.framework */; };
+		DCAEECF215116B0F00FCEFDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAEECF115116B0F00FCEFDD /* Foundation.framework */; };
+		DCAEECF415116B0F00FCEFDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAEECF315116B0F00FCEFDD /* CoreGraphics.framework */; };
+		DCAEECFA15116B0F00FCEFDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCAEECF815116B0F00FCEFDD /* InfoPlist.strings */; };
+		DCAEECFC15116B0F00FCEFDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAEECFB15116B0F00FCEFDD /* main.m */; };
+		DCAEED0015116B0F00FCEFDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAEECFF15116B0F00FCEFDD /* AppDelegate.m */; };
+		DCAEED0315116B0F00FCEFDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAEED0215116B0F00FCEFDD /* ViewController.m */; };
+		DCAEED0615116B0F00FCEFDD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAEED0415116B0F00FCEFDD /* ViewController.xib */; };
+		DCAEED0F15116B5C00FCEFDD /* libRscMgrUniv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAEED0C15116B5C00FCEFDD /* libRscMgrUniv.a */; };
+		DCAEED1115116B7900FCEFDD /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAEED1015116B7900FCEFDD /* ExternalAccessory.framework */; };
+		DCAEED1315116BCF00FCEFDD /* 63.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCAEED1215116BCF00FCEFDD /* 63.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DCAEECEB15116B0F00FCEFDD /* redparkBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redparkBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAEECEF15116B0F00FCEFDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DCAEECF115116B0F00FCEFDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCAEECF315116B0F00FCEFDD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DCAEECF715116B0F00FCEFDD /* redparkBot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "redparkBot-Info.plist"; sourceTree = "<group>"; };
+		DCAEECF915116B0F00FCEFDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCAEECFB15116B0F00FCEFDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCAEECFD15116B0F00FCEFDD /* redparkBot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "redparkBot-Prefix.pch"; sourceTree = "<group>"; };
+		DCAEECFE15116B0F00FCEFDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCAEECFF15116B0F00FCEFDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCAEED0115116B0F00FCEFDD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DCAEED0215116B0F00FCEFDD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DCAEED0515116B0F00FCEFDD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		DCAEED0C15116B5C00FCEFDD /* libRscMgrUniv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRscMgrUniv.a; sourceTree = "<group>"; };
+		DCAEED0D15116B5C00FCEFDD /* redparkSerial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redparkSerial.h; sourceTree = "<group>"; };
+		DCAEED0E15116B5C00FCEFDD /* RscMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RscMgr.h; sourceTree = "<group>"; };
+		DCAEED1015116B7900FCEFDD /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		DCAEED1215116BCF00FCEFDD /* 63.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 63.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCAEECE815116B0F00FCEFDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAEED1115116B7900FCEFDD /* ExternalAccessory.framework in Frameworks */,
+				DCAEECF015116B0F00FCEFDD /* UIKit.framework in Frameworks */,
+				DCAEECF215116B0F00FCEFDD /* Foundation.framework in Frameworks */,
+				DCAEECF415116B0F00FCEFDD /* CoreGraphics.framework in Frameworks */,
+				DCAEED0F15116B5C00FCEFDD /* libRscMgrUniv.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCAEECE015116B0D00FCEFDD = {
+			isa = PBXGroup;
+			children = (
+				DCAEED1015116B7900FCEFDD /* ExternalAccessory.framework */,
+				DCAEECF515116B0F00FCEFDD /* redparkBot */,
+				DCAEECEE15116B0F00FCEFDD /* Frameworks */,
+				DCAEECEC15116B0F00FCEFDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCAEECEC15116B0F00FCEFDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCAEECEB15116B0F00FCEFDD /* redparkBot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCAEECEE15116B0F00FCEFDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCAEECEF15116B0F00FCEFDD /* UIKit.framework */,
+				DCAEECF115116B0F00FCEFDD /* Foundation.framework */,
+				DCAEECF315116B0F00FCEFDD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCAEECF515116B0F00FCEFDD /* redparkBot */ = {
+			isa = PBXGroup;
+			children = (
+				DCAEED1215116BCF00FCEFDD /* 63.jpg */,
+				DCAEED0C15116B5C00FCEFDD /* libRscMgrUniv.a */,
+				DCAEED0D15116B5C00FCEFDD /* redparkSerial.h */,
+				DCAEED0E15116B5C00FCEFDD /* RscMgr.h */,
+				DCAEECFE15116B0F00FCEFDD /* AppDelegate.h */,
+				DCAEECFF15116B0F00FCEFDD /* AppDelegate.m */,
+				DCAEED0115116B0F00FCEFDD /* ViewController.h */,
+				DCAEED0215116B0F00FCEFDD /* ViewController.m */,
+				DCAEED0415116B0F00FCEFDD /* ViewController.xib */,
+				DCAEECF615116B0F00FCEFDD /* Supporting Files */,
+			);
+			path = redparkBot;
+			sourceTree = "<group>";
+		};
+		DCAEECF615116B0F00FCEFDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCAEECF715116B0F00FCEFDD /* redparkBot-Info.plist */,
+				DCAEECF815116B0F00FCEFDD /* InfoPlist.strings */,
+				DCAEECFB15116B0F00FCEFDD /* main.m */,
+				DCAEECFD15116B0F00FCEFDD /* redparkBot-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCAEECEA15116B0F00FCEFDD /* redparkBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAEED0915116B0F00FCEFDD /* Build configuration list for PBXNativeTarget "redparkBot" */;
+			buildPhases = (
+				DCAEECE715116B0F00FCEFDD /* Sources */,
+				DCAEECE815116B0F00FCEFDD /* Frameworks */,
+				DCAEECE915116B0F00FCEFDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = redparkBot;
+			productName = redparkBot;
+			productReference = DCAEECEB15116B0F00FCEFDD /* redparkBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCAEECE215116B0D00FCEFDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Random Accident";
+			};
+			buildConfigurationList = DCAEECE515116B0D00FCEFDD /* Build configuration list for PBXProject "redparkBot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DCAEECE015116B0D00FCEFDD;
+			productRefGroup = DCAEECEC15116B0F00FCEFDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCAEECEA15116B0F00FCEFDD /* redparkBot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCAEECE915116B0F00FCEFDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAEECFA15116B0F00FCEFDD /* InfoPlist.strings in Resources */,
+				DCAEED0615116B0F00FCEFDD /* ViewController.xib in Resources */,
+				DCAEED1315116BCF00FCEFDD /* 63.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCAEECE715116B0F00FCEFDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAEECFC15116B0F00FCEFDD /* main.m in Sources */,
+				DCAEED0015116B0F00FCEFDD /* AppDelegate.m in Sources */,
+				DCAEED0315116B0F00FCEFDD /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCAEECF815116B0F00FCEFDD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAEECF915116B0F00FCEFDD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCAEED0415116B0F00FCEFDD /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAEED0515116B0F00FCEFDD /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCAEED0715116B0F00FCEFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DCAEED0815116B0F00FCEFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCAEED0A15116B0F00FCEFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redparkBot/redparkBot-Prefix.pch";
+				INFOPLIST_FILE = "redparkBot/redparkBot-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/redparkBot\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCAEED0B15116B0F00FCEFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redparkBot/redparkBot-Prefix.pch";
+				INFOPLIST_FILE = "redparkBot/redparkBot-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/redparkBot\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCAEECE515116B0D00FCEFDD /* Build configuration list for PBXProject "redparkBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAEED0715116B0F00FCEFDD /* Debug */,
+				DCAEED0815116B0F00FCEFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCAEED0915116B0F00FCEFDD /* Build configuration list for PBXNativeTarget "redparkBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAEED0A15116B0F00FCEFDD /* Debug */,
+				DCAEED0B15116B0F00FCEFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCAEECE215116B0D00FCEFDD /* Project object */;
+}
