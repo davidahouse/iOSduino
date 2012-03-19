@@ -10,8 +10,6 @@
 
 @implementation ViewController
 
-@synthesize notesOn;
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -80,16 +78,35 @@
     [midi sendBytes:noteOn size:sizeof(noteOn)];  
 }
 
-- (IBAction)armUp:(id)sender
+- (IBAction)goForward:(id)sender
 {
     const UInt8 noteOn[] = { 0x90, 1, 127 };
-    [midi sendBytes:noteOn size:sizeof(noteOn)];      
+    [midi sendBytes:noteOn size:sizeof(noteOn)];  
 }
 
-- (IBAction)armDown:(id)sender
+- (IBAction)goBackward:(id)sender
 {
     const UInt8 noteOn[] = { 0x90, 2, 127 };
     [midi sendBytes:noteOn size:sizeof(noteOn)];  
 }
+
+- (IBAction)goLeft:(id)sender
+{
+    const UInt8 noteOn[] = { 0x90, 3, 127 };
+    [midi sendBytes:noteOn size:sizeof(noteOn)];  
+}
+
+- (IBAction)goRight:(id)sender
+{
+    const UInt8 noteOn[] = { 0x90, 4, 127 };
+    [midi sendBytes:noteOn size:sizeof(noteOn)];  
+}
+
+- (IBAction)stop:(id)sender
+{
+    const UInt8 noteOn[] = { 0x90, 5, 127 };
+    [midi sendBytes:noteOn size:sizeof(noteOn)];  
+}
+
 
 @end

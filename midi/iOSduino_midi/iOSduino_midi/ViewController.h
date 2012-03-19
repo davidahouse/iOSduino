@@ -14,10 +14,11 @@
     PGMidi *midi;
 }
 
-@property (nonatomic,retain) IBOutlet UISwitch *notesOn;
-
 - (IBAction)playSound:(id)sender;
-- (IBAction)armUp:(id)sender;
-- (IBAction)armDown:(id)sender;
+- (IBAction)goForward:(id)sender;
+- (IBAction)goBackward:(id)sender;
+- (IBAction)goLeft:(id)sender;
+- (IBAction)goRight:(id)sender;
+- (IBAction)stop:(id)sender;
 
 @end
