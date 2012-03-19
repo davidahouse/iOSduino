@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC44B985150C44E80005204A /* tmx-elmo-toy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC44B984150C44E80005204A /* tmx-elmo-toy.jpg */; };
 		DC6106981501BF3E00067427 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6106971501BF3E00067427 /* UIKit.framework */; };
 		DC61069A1501BF3E00067427 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6106991501BF3E00067427 /* Foundation.framework */; };
 		DC61069C1501BF3E00067427 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC61069B1501BF3E00067427 /* CoreGraphics.framework */; };
@@ -23,7 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC44B984150C44E80005204A /* tmx-elmo-toy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tmx-elmo-toy.jpg"; sourceTree = "<group>"; };
 		DC6106931501BF3E00067427 /* iOSduino_midi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSduino_midi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6106971501BF3E00067427 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC6106991501BF3E00067427 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,7 +93,6 @@
 		DC61069D1501BF3E00067427 /* iOSduino_midi */ = {
 			isa = PBXGroup;
 			children = (
-				DC44B984150C44E80005204A /* tmx-elmo-toy.jpg */,
 				DC6106A61501BF3E00067427 /* AppDelegate.h */,
 				DC6106A71501BF3E00067427 /* AppDelegate.m */,
 				DC6106A91501BF3E00067427 /* ViewController.h */,
@@ -186,7 +183,6 @@
 			files = (
 				DC6106A21501BF3E00067427 /* InfoPlist.strings in Resources */,
 				DC6106AE1501BF3E00067427 /* ViewController.xib in Resources */,
-				DC44B985150C44E80005204A /* tmx-elmo-toy.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
