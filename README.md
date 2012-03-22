@@ -8,20 +8,14 @@ This example uses a light sensitive resistor that is attached to an iPhone scree
 
 ## MIDI
 
-This example shows how an iPad application can control solenoids attached to an Arduino using the MIDI protocol.
+This example shows how an iPad application can act as a remote control for a Toy robot using the MIDI protocol.
 
 ### Links
 
 The excellent PGMidi library from Pete Goodliffe: https://github.com/petegoodliffe/PGMidi
 
 
-
 ## Redpark
 
 This example shows how to control a mobile robot using an on-board iPod touch and the Redpark serial cable.
-
-
-## Wifi
-
-This example shows how to control a toy robot using an Arduino and Wifi chip. An iPhone is used to remote control the toy.
 
